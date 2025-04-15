@@ -1,10 +1,16 @@
-﻿namespace MuseoMineralogia.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MuseoMineralogia.Models
 {
     public class TipoBiglietto
     {
-        public int Id { get; set; }
-        public string? Nome { get; set; }
+        [Key]
+        public int TipoBigliettoId { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string? Nome { get; set; } 
+
         public decimal Prezzo { get; set; }
     }
 }
-
