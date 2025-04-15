@@ -12,8 +12,8 @@ using MuseoMineralogia.Data;
 namespace MuseoMineralogia.Migrations
 {
     [DbContext(typeof(MuseoContext))]
-    [Migration("20250415152519_InitialCreate1")]
-    partial class InitialCreate1
+    [Migration("20250415233252_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -56,7 +56,8 @@ namespace MuseoMineralogia.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("PrezzoUnitario")
-                        .HasColumnType("decimal(18,2)");
+                        .HasPrecision(10, 2)
+                        .HasColumnType("decimal(10,2)");
 
                     b.Property<int>("Quantita")
                         .HasColumnType("int");
@@ -138,7 +139,8 @@ namespace MuseoMineralogia.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<decimal>("Prezzo")
-                        .HasColumnType("decimal(18,2)");
+                        .HasPrecision(10, 2)
+                        .HasColumnType("decimal(10,2)");
 
                     b.HasKey("TipoBigliettoId");
 
@@ -216,7 +218,7 @@ namespace MuseoMineralogia.Migrations
                     b.HasOne("MuseoMineralogia.Models.TipoBiglietto", "TipoBiglietto")
                         .WithMany()
                         .HasForeignKey("TipoBigliettoId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Ordine");
@@ -235,7 +237,7 @@ namespace MuseoMineralogia.Migrations
                     b.HasOne("MuseoMineralogia.Models.TipoBiglietto", "TipoBiglietto")
                         .WithMany()
                         .HasForeignKey("TipoBigliettoId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Carrello");
@@ -248,7 +250,7 @@ namespace MuseoMineralogia.Migrations
                     b.HasOne("MuseoMineralogia.Models.Utente", "Utente")
                         .WithMany("Ordini")
                         .HasForeignKey("UtenteId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Utente");
