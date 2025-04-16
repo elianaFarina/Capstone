@@ -9,7 +9,7 @@ namespace MuseoMineralogia.Models
         public int CarrelloId { get; set; }
 
         [Required]
-        public int UtenteId { get; set; }
+        public string UtenteId { get; set; } = string.Empty;
         public virtual Utente? Utente { get; set; }
 
         public virtual ICollection<ElementoCarrello>? ElementiCarrello { get; set; }

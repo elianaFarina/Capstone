@@ -8,7 +8,7 @@ namespace MuseoMineralogia.Models
         public int OrdineId { get; set; }
 
         [Required]
-        public int UtenteId { get; set; }
+        public string UtenteId { get; set; } = string.Empty;
         public virtual Utente? Utente { get; set; }
 
         [Required]
@@ -18,6 +18,7 @@ namespace MuseoMineralogia.Models
         public string? Stato { get; set; }
 
         public virtual ICollection<DettaglioOrdine>? DettagliOrdine { get; set; }
+
     }
 }
 

@@ -145,3 +145,11 @@ C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\obj\D
 C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\obj\Debug\net8.0\MuseoMineralogia.pdb
 C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\obj\Debug\net8.0\MuseoMineralogia.genruntimeconfig.cache
 C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\obj\Debug\net8.0\ref\MuseoMineralogia.dll
+C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\obj\Debug\net8.0\MuseoMineralogia.MvcApplicationPartsAssemblyInfo.cs
