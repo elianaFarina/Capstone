@@ -2,6 +2,8 @@ using MuseoMineralogia.Data;
 using Microsoft.EntityFrameworkCore;
 using MuseoMineralogia.Models;
 using Microsoft.AspNetCore.Identity;
+using MuseoMineralogia.Services;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +13,7 @@ builder.Services.AddDbContext<MuseoContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MuseoConnection")));
 
 builder.Services.AddIdentity<Utente, IdentityRole>(options => {
-    
+   
     options.Password.RequireDigit = true;
     options.Password.RequiredLength = 8;
     options.Password.RequireNonAlphanumeric = false;
@@ -33,6 +35,9 @@ builder.Services.ConfigureApplicationCookie(options => {
     options.ExpireTimeSpan = TimeSpan.FromDays(14);
 });
 
+builder.Services.AddTransient<MuseoMineralogia.Services.IEmailSender, MuseoMineralogia.Services.EmailSender>();
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
@@ -45,7 +50,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
-app.UseAuthentication(); 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
@@ -68,7 +73,7 @@ using (var scope = app.Services.CreateScope())
         {
             await roleManager.CreateAsync(new IdentityRole("Utente"));
         }
-
+          
         var adminUser = await userManager.FindByEmailAsync("admin@museo.it");
         if (adminUser == null)
         {

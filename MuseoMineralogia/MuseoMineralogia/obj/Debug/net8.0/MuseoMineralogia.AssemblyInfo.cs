@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MuseoMineralogia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebf19e7382fddd91fa2c03f10971ec3d34a9a008")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95b391f8a706824c22f9a33fb2d82d3f72335cb4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MuseoMineralogia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MuseoMineralogia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

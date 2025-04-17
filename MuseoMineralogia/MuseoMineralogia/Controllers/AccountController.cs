@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MuseoMineralogia.Models;
 using MuseoMineralogia.ViewModels;
+using MuseoMineralogia.Services;
 using System.Threading.Tasks;
 
 namespace MuseoMineralogia.Controllers
@@ -10,11 +11,15 @@ namespace MuseoMineralogia.Controllers
     {
         private readonly UserManager<Utente> _userManager;
         private readonly SignInManager<Utente> _signInManager;
+        private readonly IEmailSender _emailSender;
 
-        public AccountController(UserManager<Utente> userManager, SignInManager<Utente> signInManager)
+        public AccountController(UserManager<Utente> userManager,
+                               SignInManager<Utente> signInManager,
+                               IEmailSender emailSender)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _emailSender = emailSender;
         }
 
         [HttpGet]
@@ -93,6 +98,97 @@ namespace MuseoMineralogia.Controllers
 
         [HttpGet]
         public IActionResult AccessDenied()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+                {
+                    // Non rivelare che l'utente non esiste o non è confermato
+                    return RedirectToAction("ForgotPasswordConfirmation");
+                }
+
+                // Genera il token per il reset della password
+                var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var callbackUrl = Url.Action(
+                    "ResetPassword",
+                    "Account",
+                    new { userId = user.Id, code = code },
+                    protocol: HttpContext.Request.Scheme);
+
+                await _emailSender.SendEmailAsync(
+                    model.Email,
+                    "Reset Password",
+                    $"Per reimpostare la password, <a href='{callbackUrl}'>clicca qui</a>.");
+
+                return RedirectToAction("ForgotPasswordConfirmation");
+            }
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult ForgotPasswordConfirmation()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult ResetPassword(string? code = null)
+        {
+            if (code == null)
+            {
+                return BadRequest("È necessario un codice per reimpostare la password.");
+            }
+            else
+            {
+                var model = new ResetPasswordViewModel { Code = code };
+                return View(model);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+            {
+                // Non rivelare che l'utente non esiste
+                return RedirectToAction("ResetPasswordConfirmation");
+            }
+
+            var result = await _userManager.ResetPasswordAsync(user, model.Code, model.Password);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("ResetPasswordConfirmation");
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult ResetPasswordConfirmation()
         {
             return View();
         }
