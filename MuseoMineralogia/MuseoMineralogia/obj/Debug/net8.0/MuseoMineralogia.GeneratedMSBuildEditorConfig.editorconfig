@@ -48,6 +48,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/elifa/Documents/GitHub/Capstone/MuseoMineralogia/MuseoMineralogia/Views/Biglietteria/Acquista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlnbGlldHRlcmlhXEFjcXVpc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elifa/Documents/GitHub/Capstone/MuseoMineralogia/MuseoMineralogia/Views/Biglietteria/Cancel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlnbGlldHRlcmlhXENhbmNlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elifa/Documents/GitHub/Capstone/MuseoMineralogia/MuseoMineralogia/Views/Biglietteria/Dettaglio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlnbGlldHRlcmlhXERldHRhZ2xpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elifa/Documents/GitHub/Capstone/MuseoMineralogia/MuseoMineralogia/Views/Biglietteria/DettaglioOrdine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlnbGlldHRlcmlhXERldHRhZ2xpb09yZGluZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elifa/Documents/GitHub/Capstone/MuseoMineralogia/MuseoMineralogia/Views/Biglietteria/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlnbGlldHRlcmlhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elifa/Documents/GitHub/Capstone/MuseoMineralogia/MuseoMineralogia/Views/Biglietteria/MieiOrdini.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlnbGlldHRlcmlhXE1pZWlPcmRpbmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elifa/Documents/GitHub/Capstone/MuseoMineralogia/MuseoMineralogia/Views/Biglietteria/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlnbGlldHRlcmlhXFN1Y2Nlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/elifa/Documents/GitHub/Capstone/MuseoMineralogia/MuseoMineralogia/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

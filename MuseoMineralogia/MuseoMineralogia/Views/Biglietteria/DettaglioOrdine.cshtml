@@ -1,0 +1,93 @@
+﻿@model MuseoMineralogia.Models.Ordine
+@{
+    ViewData["Title"] = "Dettaglio Ordine";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h3>Dettaglio Ordine #@Model.OrdineId</h3>
+        </div>
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h5>Informazioni Ordine</h5>
+                    <p><strong>Data:</strong> @Model.DataOrdine.ToString("dd/MM/yyyy HH:mm")</p>
+                    <p>
+                        <strong>Stato:</strong>
+                        @{
+                            var statoClass = Model.Stato switch
+                            {
+                                "Pagato" => "bg-success",
+                                "In attesa di pagamento" => "bg-warning text-dark",
+                                "Annullato" => "bg-danger",
+                                _ => "bg-secondary"
+                            };
+                        }
+                        <span class="badge @statoClass">@Model.Stato</span>
+                    </p>
+                    <p><strong>Session ID:</strong> @Model.SessionId</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Informazioni Cliente</h5>
+                    <p><strong>Nome:</strong> @Model.Utente?.Nome @Model.Utente?.Cognome</p>
+                    <p><strong>Email:</strong> @Model.Utente?.Email</p>
+                </div>
+            </div>
+
+            <h5>Dettagli Biglietti</h5>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Biglietto</th>
+                            <th>Prezzo Unitario</th>
+                            <th>Quantità</th>
+                            <th class="text-end">Totale</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.DettagliOrdine != null)
+                        {
+                            @foreach (var dettaglio in Model.DettagliOrdine)
+                            {
+                                <tr>
+                                    <td>@dettaglio.TipoBiglietto?.Nome</td>
+                                    <td>€@dettaglio.PrezzoUnitario.ToString("F2")</td>
+                                    <td>@dettaglio.Quantita</td>
+                                    <td class="text-end">€@((dettaglio.PrezzoUnitario * dettaglio.Quantita).ToString("F2"))</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                    <tfoot class="table-light">
+                        <tr>
+                            <th colspan="3" class="text-end">Totale:</th>
+                            <th class="text-end">
+                                @{
+                                    var totale = Model.DettagliOrdine != null
+                                    ? Model.DettagliOrdine.Sum(d => d.PrezzoUnitario * d.Quantita)
+                                    : 0;
+                                }
+                                €@totale.ToString("F2")
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="mt-4">
+                <a asp-action="MieiOrdini" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left me-2"></i>Torna agli Ordini
+                </a>
+
+                @if (Model.Stato == "Pagato")
+                {
+                    <button class="btn btn-primary float-end" onclick="window.print()">
+                        <i class="bi bi-printer me-2"></i>Stampa
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+﻿@model IEnumerable<MuseoMineralogia.Models.Ordine>
+@{
+    ViewData["Title"] = "I Miei Ordini";
+}
+
+<div class="container mt-4">
+    <h1>I Miei Ordini</h1>
+    <p class="lead">Visualizza lo storico dei tuoi acquisti</p>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="card shadow">
+        <div class="card-body">
+            @if (!Model.Any())
+            {
+                <div class="text-center py-5">
+                    <h4>Non hai ancora effettuato acquisti</h4>
+                    <p>Visita la nostra biglietteria per acquistare i biglietti</p>
+                    <a asp-action="Index" class="btn btn-primary mt-3">
+                        <i class="bi bi-ticket-perforated me-2"></i>Vai alla Biglietteria
+                    </a>
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Ordine #</th>
+                                <th>Data</th>
+                                <th>Totale</th>
+                                <th>Stato</th>
+                                <th>Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var ordine in Model)
+                            {
+                                var totale = ordine.DettagliOrdine?.Sum(d => d.PrezzoUnitario * d.Quantita) ?? 0;
+                                var statoClass = ordine.Stato switch
+                                {
+                                    "Pagato" => "bg-success text-white",
+                                    "In attesa di pagamento" => "bg-warning text-dark",
+                                    "Annullato" => "bg-danger text-white",
+                                    _ => "bg-secondary text-white"
+                                };
+
+                                <tr>
+                                    <td>#@ordine.OrdineId</td>
+                                    <td>@ordine.DataOrdine.ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td>€@totale.ToString("F2")</td>
+                                    <td><span class="badge @statoClass">@ordine.Stato</span></td>
+                                    <td>
+                                        <a asp-action="DettaglioOrdine" asp-route-id="@ordine.OrdineId"
+                                           class="btn btn-sm btn-outline-primary">
+                                            <i class="bi bi-eye"></i> Dettagli
+                                        </a>
+                                        @if (ordine.Stato == "In attesa di pagamento")
+                                        {
+                                            <form asp-action="CancellaOrdine" asp-route-id="@ordine.OrdineId"
+                                                  method="post" class="d-inline"
+                                                  onsubmit="return confirm('Sei sicuro di voler annullare questo ordine?');">
+                                                @Html.AntiForgeryToken()
+                                                <button type="submit" class="btn btn-sm btn-outline-danger">
+                                                    <i class="bi bi-trash"></i> Annulla
+                                                </button>
+                                            </form>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>

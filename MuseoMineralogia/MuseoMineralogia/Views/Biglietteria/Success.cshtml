@@ -1,0 +1,90 @@
+﻿@model MuseoMineralogia.Models.Ordine
+@{
+    ViewData["Title"] = "Pagamento Completato";
+}
+
+<div class="container mt-4">
+    <div class="card shadow border-success">
+        <div class="card-header bg-success text-white">
+            <h3><i class="bi bi-check-circle me-2"></i>Pagamento Completato!</h3>
+        </div>
+        <div class="card-body">
+            <div class="text-center mb-4">
+                <div class="display-1 text-success">
+                    <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <h2>Grazie per il tuo acquisto!</h2>
+                <p class="lead">Il tuo ordine è stato elaborato con successo.</p>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h5>Dettagli Ordine</h5>
+                    <p><strong>ID Ordine:</strong> #@Model.OrdineId</p>
+                    <p><strong>Data:</strong> @Model.DataOrdine.ToString("dd/MM/yyyy HH:mm")</p>
+                    <p><strong>Stato:</strong> <span class="badge bg-success">@Model.Stato</span></p>
+                    <p><strong>Sessione ID:</strong> @ViewBag.SessionId</p>
+                    <p><strong>Stato Pagamento:</strong> @ViewBag.PaymentStatus</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Riepilogo Acquisto</h5>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Biglietto</th>
+                                <th>Prezzo</th>
+                                <th>Qtà</th>
+                                <th class="text-end">Totale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.DettagliOrdine != null)
+                            {
+                                @foreach (var dettaglio in Model.DettagliOrdine)
+                                {
+                                    <tr>
+                                        <td>@(dettaglio.TipoBiglietto?.Nome ?? "Non specificato")</td>
+                                        <td>€@dettaglio.PrezzoUnitario.ToString("F2")</td>
+                                        <td>@dettaglio.Quantita</td>
+                                        <td class="text-end">€@((dettaglio.PrezzoUnitario * dettaglio.Quantita).ToString("F2"))</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="3" class="text-end">Totale:</th>
+                                <th class="text-end">
+                                    @{
+                                        var totale = Model.DettagliOrdine != null
+                                        ? Model.DettagliOrdine.Sum(d => d.PrezzoUnitario * d.Quantita)
+                                        : 0;
+                                    }
+                                    €@totale.ToString("F2")
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <div class="border-top pt-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Cosa succede ora?</h5>
+                        <p>Riceverai un'email di conferma con i dettagli del tuo acquisto. Puoi presentare questa conferma all'ingresso del museo.</p>
+                        <p>Puoi anche visualizzare i tuoi ordini nella sezione "I miei ordini".</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <a asp-action="MieiOrdini" class="btn btn-outline-primary me-2">
+                            <i class="bi bi-list-ul me-2"></i>I miei ordini
+                        </a>
+                        <a asp-action="Index" asp-controller="Home" class="btn btn-primary">
+                            <i class="bi bi-house me-2"></i>Torna alla Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

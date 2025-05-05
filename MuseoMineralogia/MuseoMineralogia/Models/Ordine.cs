@@ -1,5 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 namespace MuseoMineralogia.Models
 {
     public class Ordine
@@ -9,6 +10,7 @@ namespace MuseoMineralogia.Models
 
         [Required]
         public string UtenteId { get; set; } = string.Empty;
+
         public virtual Utente? Utente { get; set; }
 
         [Required]
@@ -17,8 +19,13 @@ namespace MuseoMineralogia.Models
         [StringLength(50)]
         public string? Stato { get; set; }
 
-        public virtual ICollection<DettaglioOrdine>? DettagliOrdine { get; set; }
+        // Proprietà aggiuntive per Stripe
+        [StringLength(100)]
+        public string? SessionId { get; set; }
 
+        [StringLength(100)]
+        public string? PaymentIntentId { get; set; }
+
+        public virtual ICollection<DettaglioOrdine>? DettagliOrdine { get; set; }
     }
 }
-

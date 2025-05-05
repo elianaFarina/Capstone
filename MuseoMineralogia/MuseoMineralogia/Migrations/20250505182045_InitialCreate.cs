@@ -30,8 +30,8 @@ namespace MuseoMineralogia.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Cognome = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Cognome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -199,7 +199,9 @@ namespace MuseoMineralogia.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UtenteId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     DataOrdine = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Stato = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true)
+                    Stato = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    SessionId = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    PaymentIntentId = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true)
                 },
                 constraints: table =>
                 {

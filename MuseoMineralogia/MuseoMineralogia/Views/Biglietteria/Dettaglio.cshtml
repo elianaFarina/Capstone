@@ -1,0 +1,27 @@
+﻿@model MuseoMineralogia.Models.TipoBiglietto
+@{
+    ViewData["Title"] = "Dettaglio Biglietto";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3>@Model.Nome</h3>
+                </div>
+                <div class="card-body">
+                    <h4 class="text-primary">Prezzo: €@Model.Prezzo.ToString("F2")</h4>
+                    <hr />
+                    <p>Descrizione non disponibile.</p>
+
+                    <div class="mt-4">
+                        <a asp-action="Index" class="btn btn-outline-secondary">Torna alla lista</a>
+                        <a asp-action="Acquista" asp-route-id="@Model.TipoBigliettoId"
+                           class="btn btn-primary float-end">Acquista ora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

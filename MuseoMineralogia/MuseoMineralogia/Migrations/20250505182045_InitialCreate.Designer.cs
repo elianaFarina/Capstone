@@ -12,7 +12,7 @@ using MuseoMineralogia.Data;
 namespace MuseoMineralogia.Migrations
 {
     [DbContext(typeof(MuseoContext))]
-    [Migration("20250502191734_InitialCreate")]
+    [Migration("20250505182045_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -245,6 +245,14 @@ namespace MuseoMineralogia.Migrations
                     b.Property<DateTime>("DataOrdine")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("PaymentIntentId")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("SessionId")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<string>("Stato")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -291,6 +299,7 @@ namespace MuseoMineralogia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Cognome")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -311,6 +320,7 @@ namespace MuseoMineralogia.Migrations
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("Nome")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")
