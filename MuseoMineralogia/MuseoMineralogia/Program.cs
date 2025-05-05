@@ -3,31 +3,34 @@ using Microsoft.EntityFrameworkCore;
 using MuseoMineralogia.Models;
 using Microsoft.AspNetCore.Identity;
 using MuseoMineralogia.Services;
-using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
+// Add services to the container
 builder.Services.AddControllersWithViews();
 
+// Configura DbContext
 builder.Services.AddDbContext<MuseoContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MuseoConnection")));
+   options.UseSqlServer(builder.Configuration.GetConnectionString("MuseoConnection")));
 
+// Configura Identity
 builder.Services.AddIdentity<Utente, IdentityRole>(options => {
-   
     options.Password.RequireDigit = true;
     options.Password.RequiredLength = 8;
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireUppercase = true;
     options.Password.RequireLowercase = true;
-
     options.SignIn.RequireConfirmedEmail = false;
-
     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
     options.Lockout.MaxFailedAccessAttempts = 5;
 })
 .AddEntityFrameworkStores<MuseoContext>()
-.AddDefaultTokenProviders();
+.AddDefaultTokenProviders(); // Avevi già questa riga, ottimo!
 
+// Configurazione della durata del token per il reset della password
+builder.Services.Configure<DataProtectionTokenProviderOptions>(opt =>
+    opt.TokenLifespan = TimeSpan.FromHours(2));
+
+// Configura Cookie
 builder.Services.ConfigureApplicationCookie(options => {
     options.LoginPath = "/Account/Login";
     options.LogoutPath = "/Account/Logout";
@@ -35,11 +38,13 @@ builder.Services.ConfigureApplicationCookie(options => {
     options.ExpireTimeSpan = TimeSpan.FromDays(14);
 });
 
-builder.Services.AddTransient<MuseoMineralogia.Services.IEmailSender, MuseoMineralogia.Services.EmailSender>();
+// Configura il servizio email
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 
 var app = builder.Build();
 
+// Configure the HTTP request pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -49,14 +54,14 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+   name: "default",
+   pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// Seeding dei ruoli e dell'account admin
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -64,7 +69,6 @@ using (var scope = app.Services.CreateScope())
     {
         var userManager = services.GetRequiredService<UserManager<Utente>>();
         var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-
         if (!await roleManager.RoleExistsAsync("Admin"))
         {
             await roleManager.CreateAsync(new IdentityRole("Admin"));
@@ -73,7 +77,6 @@ using (var scope = app.Services.CreateScope())
         {
             await roleManager.CreateAsync(new IdentityRole("Utente"));
         }
-          
         var adminUser = await userManager.FindByEmailAsync("admin@museo.it");
         if (adminUser == null)
         {
@@ -85,7 +88,6 @@ using (var scope = app.Services.CreateScope())
                 Cognome = "Sistema",
                 EmailConfirmed = true
             };
-
             var result = await userManager.CreateAsync(admin, "Admin123!");
             if (result.Succeeded)
             {

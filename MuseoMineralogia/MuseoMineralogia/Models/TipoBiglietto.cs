@@ -9,7 +9,7 @@ namespace MuseoMineralogia.Models
 
         [Required]
         [StringLength(50)]
-        public string? Nome { get; set; } 
+        public string Nome { get; set; } = string.Empty;
 
         public decimal Prezzo { get; set; }
     }

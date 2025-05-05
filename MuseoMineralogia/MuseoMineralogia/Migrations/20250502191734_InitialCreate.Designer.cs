@@ -12,7 +12,7 @@ using MuseoMineralogia.Data;
 namespace MuseoMineralogia.Migrations
 {
     [DbContext(typeof(MuseoContext))]
-    [Migration("20250417180855_InitialCreate")]
+    [Migration("20250502191734_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
