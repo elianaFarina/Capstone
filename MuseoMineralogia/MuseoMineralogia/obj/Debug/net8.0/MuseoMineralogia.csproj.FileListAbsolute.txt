@@ -147,3 +147,5 @@ C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\obj\D
 C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\bin\Debug\net8.0\Stripe.net.dll
 C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\obj\Debug\net8.0\MuseoMineralogia.sourcelink.json
+C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\bin\Debug\net8.0\reactComponents\package-lock.json
+C:\Users\elifa\Documents\GitHub\Capstone\MuseoMineralogia\MuseoMineralogia\bin\Debug\net8.0\reactComponents\package.json

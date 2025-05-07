@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\index.js",
+      "PackagePath": "staticwebassets\\js\\react\\assets\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\index.html",
+      "PackagePath": "staticwebassets\\js\\react\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\vite.svg",
+      "PackagePath": "staticwebassets\\js\\react\\vite.svg"
+    },
+    {
       "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eEzrVUfYCU60nIQt8Lvhen/dBS/cRLxzX/alnOi3JaY=",
+  "Hash": "VhLwdcGksg5aCQku+xmxScTM6lUNgJ7+jKZZv2hwYAw=",
   "Source": "MuseoMineralogia",
   "BasePath": "_content/MuseoMineralogia",
   "Mode": "Default",
@@ -1359,6 +1359,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\index.js",
+      "SourceId": "MuseoMineralogia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\",
+      "BasePath": "_content/MuseoMineralogia",
+      "RelativePath": "js/react/assets/index#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eqv8zyyhq3",
+      "Integrity": "pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\react\\assets\\index.js"
+    },
+    {
+      "Identity": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\index.html",
+      "SourceId": "MuseoMineralogia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\",
+      "BasePath": "_content/MuseoMineralogia",
+      "RelativePath": "js/react/index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c76yacmjob",
+      "Integrity": "6G1mBgwmF4p4QnBjUUm16Cq5kRY+MLUt7Yc2sb/0xM0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\react\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\vite.svg",
+      "SourceId": "MuseoMineralogia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\",
+      "BasePath": "_content/MuseoMineralogia",
+      "RelativePath": "js/react/vite#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "69kjnsiwqx",
+      "Integrity": "SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\react\\vite.svg"
     },
     {
       "Identity": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\site.js",
@@ -4961,6 +5024,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/index.eqv8zyyhq3.js",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 16:53:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eqv8zyyhq3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/react/assets/index.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/index.js",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 16:53:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/index.c76yacmjob.html",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6G1mBgwmF4p4QnBjUUm16Cq5kRY+MLUt7Yc2sb/0xM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 16:53:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c76yacmjob"
+        },
+        {
+          "Name": "label",
+          "Value": "js/react/index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6G1mBgwmF4p4QnBjUUm16Cq5kRY+MLUt7Yc2sb/0xM0="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/index.html",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6G1mBgwmF4p4QnBjUUm16Cq5kRY+MLUt7Yc2sb/0xM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 16:53:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6G1mBgwmF4p4QnBjUUm16Cq5kRY+MLUt7Yc2sb/0xM0="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/vite.69kjnsiwqx.svg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\vite.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 15:06:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "69kjnsiwqx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/react/vite.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/vite.svg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\vite.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 15:06:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs="
         }
       ]
     },

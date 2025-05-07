@@ -24,6 +24,42 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 09:00:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/assets/index.eqv8zyyhq3.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\assets\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"eqv8zyyhq3"},{"Name":"integrity","Value":"sha256-pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8="},{"Name":"label","Value":"_content/MuseoMineralogia/js/react/assets/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"188003"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 16:53:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/assets/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\assets\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"188003"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 16:53:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/index.c76yacmjob.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c76yacmjob"},{"Name":"integrity","Value":"sha256-6G1mBgwmF4p4QnBjUUm16Cq5kRY\u002BMLUt7Yc2sb/0xM0="},{"Name":"label","Value":"_content/MuseoMineralogia/js/react/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"376"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00226G1mBgwmF4p4QnBjUUm16Cq5kRY\u002BMLUt7Yc2sb/0xM0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 16:53:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6G1mBgwmF4p4QnBjUUm16Cq5kRY\u002BMLUt7Yc2sb/0xM0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"376"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00226G1mBgwmF4p4QnBjUUm16Cq5kRY\u002BMLUt7Yc2sb/0xM0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 16:53:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/vite.69kjnsiwqx.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\vite.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"69kjnsiwqx"},{"Name":"integrity","Value":"sha256-SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs="},{"Name":"label","Value":"_content/MuseoMineralogia/js/react/vite.svg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1497"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 15:06:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/vite.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\vite.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1497"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 15:06:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
