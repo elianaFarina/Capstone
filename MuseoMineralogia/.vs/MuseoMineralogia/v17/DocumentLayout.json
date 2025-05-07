@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\views\\carrello\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\views\\carrello\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\controllers\\carrellocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\controllers\\carrellocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\views\\biglietteria\\dettaglioordine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\views\\biglietteria\\dettaglioordine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\views\\carrello\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\views\\carrello\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\controllers\\biglietteriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\controllers\\biglietteriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\models\\carrello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\models\\carrello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\views\\biglietteria\\acquista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\views\\biglietteria\\acquista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\models\\tipobiglietto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\models\\tipobiglietto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\models\\acquistomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\models\\acquistomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\models\\elementocarrello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\models\\elementocarrello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\models\\dettaglioordine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\models\\dettaglioordine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\views\\biglietteria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\views\\biglietteria\\mieiordini.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\views\\biglietteria\\dettaglioordine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\views\\biglietteria\\dettaglioordine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\views\\biglietteria\\dettaglio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\views\\biglietteria\\dettaglio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -35,24 +75,8 @@
       "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\views\\biglietteria\\cancel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\views\\biglietteria\\acquista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\views\\biglietteria\\acquista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\models\\acquistomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\models\\acquistomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\controllers\\biglietteriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\controllers\\biglietteriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\models\\ordine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -151,18 +175,6 @@
       "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\models\\elementocarrello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\models\\elementocarrello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\models\\dettaglioordine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\models\\dettaglioordine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\models\\carrello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\models\\carrello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\data\\museocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\data\\museocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -177,10 +189,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Migrations\\20250416101642_FixDecimalPrecision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MuseoMineralogia\\Migrations\\20250416101642_FixDecimalPrecision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|c:\\users\\elifa\\documents\\github\\capstone\\museomineralogia\\museomineralogia\\migrations\\20250505182045_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3C6E108-660F-4425-AEFD-0B1BC071FB59}|MuseoMineralogia\\MuseoMineralogia.csproj|solutionrelative:museomineralogia\\migrations\\20250505182045_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -190,7 +198,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 298,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -198,19 +206,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Index.cshtml",
-              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Biglietteria\\Index.cshtml",
-              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Index.cshtml",
-              "RelativeToolTip": "MuseoMineralogia\\Views\\Biglietteria\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAkwB8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Acquista.cshtml",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Acquista.cshtml",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Biglietteria\\Acquista.cshtml",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Acquista.cshtml",
+              "RelativeToolTip": "MuseoMineralogia\\Views\\Biglietteria\\Acquista.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwEAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-05T17:21:13.282Z"
+              "WhenOpened": "2025-05-05T17:24:21.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarrelloController.cs",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Controllers\\CarrelloController.cs",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Controllers\\CarrelloController.cs",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Controllers\\CarrelloController.cs",
+              "RelativeToolTip": "MuseoMineralogia\\Controllers\\CarrelloController.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAawMIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T11:46:17.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Carrello\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Carrello\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Carrello\\Checkout.cshtml",
+              "RelativeToolTip": "MuseoMineralogia\\Views\\Carrello\\Checkout.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAqwCQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T12:13:47.466Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Carrello.cs",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\Carrello.cs",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\Carrello.cs",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\Carrello.cs",
+              "RelativeToolTip": "MuseoMineralogia\\Models\\Carrello.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T15:20:57.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Carrello\\Index.cshtml",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Carrello\\Index.cshtml",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Carrello\\Index.cshtml",
+              "RelativeToolTip": "MuseoMineralogia\\Views\\Carrello\\Index.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAADkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T12:12:01.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DettaglioOrdine.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\DettaglioOrdine.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Biglietteria\\DettaglioOrdine.cshtml",
@@ -218,47 +279,90 @@
               "RelativeToolTip": "MuseoMineralogia\\Views\\Biglietteria\\DettaglioOrdine.cshtml",
               "ViewState": "AgIAAEYAAAAAAAAAAAAkwFwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-05T17:26:36.71Z"
+              "WhenOpened": "2025-05-05T17:26:36.71Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MieiOrdini.cshtml",
-              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\MieiOrdini.cshtml",
-              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Biglietteria\\MieiOrdini.cshtml",
-              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\MieiOrdini.cshtml",
-              "RelativeToolTip": "MuseoMineralogia\\Views\\Biglietteria\\MieiOrdini.cshtml",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAkwFwAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-05T17:26:05.166Z"
+              "Title": "BiglietteriaController.cs",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Controllers\\BiglietteriaController.cs",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Controllers\\BiglietteriaController.cs",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Controllers\\BiglietteriaController.cs",
+              "RelativeToolTip": "MuseoMineralogia\\Controllers\\BiglietteriaController.cs",
+              "ViewState": "AgIAAKUBAAAAAAAAAAAiwLsBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T16:48:36.85Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Success.cshtml",
-              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Success.cshtml",
-              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Biglietteria\\Success.cshtml",
-              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Success.cshtml",
-              "RelativeToolTip": "MuseoMineralogia\\Views\\Biglietteria\\Success.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAUwFoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-05T17:24:50.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "TipoBiglietto.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\TipoBiglietto.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\TipoBiglietto.cs",
               "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\TipoBiglietto.cs",
               "RelativeToolTip": "MuseoMineralogia\\Models\\TipoBiglietto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T15:18:33.553Z"
+              "WhenOpened": "2025-04-15T15:18:33.553Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "AcquistoModel.cs",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\AcquistoModel.cs",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\AcquistoModel.cs",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\AcquistoModel.cs",
+              "RelativeToolTip": "MuseoMineralogia\\Models\\AcquistoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T17:00:16.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DettaglioOrdine.cs",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\DettaglioOrdine.cs",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\DettaglioOrdine.cs",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\DettaglioOrdine.cs",
+              "RelativeToolTip": "MuseoMineralogia\\Models\\DettaglioOrdine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T15:20:13.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ElementoCarrello.cs",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\ElementoCarrello.cs",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\ElementoCarrello.cs",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\ElementoCarrello.cs",
+              "RelativeToolTip": "MuseoMineralogia\\Models\\ElementoCarrello.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T15:21:36.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MuseoMineralogia\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwEcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-16T09:53:50.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Program.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Program.cs",
@@ -271,7 +375,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Success.cshtml",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Biglietteria\\Success.cshtml",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Success.cshtml",
+              "RelativeToolTip": "MuseoMineralogia\\Views\\Biglietteria\\Success.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAUwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T17:24:50.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MieiOrdini.cshtml",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\MieiOrdini.cshtml",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Biglietteria\\MieiOrdini.cshtml",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\MieiOrdini.cshtml",
+              "RelativeToolTip": "MuseoMineralogia\\Views\\Biglietteria\\MieiOrdini.cshtml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwFwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T17:26:05.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Index.cshtml",
+              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Biglietteria\\Index.cshtml",
+              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Index.cshtml",
+              "RelativeToolTip": "MuseoMineralogia\\Views\\Biglietteria\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T17:21:13.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Dettaglio.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Dettaglio.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Biglietteria\\Dettaglio.cshtml",
@@ -283,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "Cancel.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Cancel.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Biglietteria\\Cancel.cshtml",
@@ -295,19 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Acquista.cshtml",
-              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Acquista.cshtml",
-              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Biglietteria\\Acquista.cshtml",
-              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Biglietteria\\Acquista.cshtml",
-              "RelativeToolTip": "MuseoMineralogia\\Views\\Biglietteria\\Acquista.cshtml",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAkwIkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-05T17:24:21.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\appsettings.json",
               "RelativeDocumentMoniker": "MuseoMineralogia\\appsettings.json",
@@ -319,43 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AcquistoModel.cs",
-              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\AcquistoModel.cs",
-              "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\AcquistoModel.cs",
-              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\AcquistoModel.cs",
-              "RelativeToolTip": "MuseoMineralogia\\Models\\AcquistoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T17:00:16.061Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BiglietteriaController.cs",
-              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Controllers\\BiglietteriaController.cs",
-              "RelativeDocumentMoniker": "MuseoMineralogia\\Controllers\\BiglietteriaController.cs",
-              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Controllers\\BiglietteriaController.cs",
-              "RelativeToolTip": "MuseoMineralogia\\Controllers\\BiglietteriaController.cs",
-              "ViewState": "AgIAAGYBAAAAAAAAAAAkwHwBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T16:48:36.85Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MuseoMineralogia\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-16T09:53:50.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "StripeSettings.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\StripeSettings.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\StripeSettings.cs",
@@ -367,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "ForgotPasswordModel.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\ForgotPasswordModel.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\ForgotPasswordModel.cs",
@@ -379,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "Ordine.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\Ordine.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\Ordine.cs",
@@ -391,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "ResetPasswordModel.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\ResetPasswordModel.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\ResetPasswordModel.cs",
@@ -403,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\_ViewImports.cshtml",
@@ -415,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Shared\\Error.cshtml",
@@ -427,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -439,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Account\\ResetPassword.cshtml",
@@ -451,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "ResetPasswordConfirmation.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Account\\ResetPasswordConfirmation.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Account\\ResetPasswordConfirmation.cshtml",
@@ -463,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Home\\Index.cshtml",
@@ -475,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Home\\Privacy.cshtml",
@@ -487,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Account\\Register.cshtml",
@@ -499,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Account\\Login.cshtml",
@@ -511,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "ForgotPasswordConfirmation.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
@@ -523,7 +615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Account\\ForgotPassword.cshtml",
@@ -535,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Views\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Views\\Account\\AccessDenied.cshtml",
@@ -547,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "ResetPasswordViewModel.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\ViewModels\\ResetPasswordViewModel.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\ViewModels\\ResetPasswordViewModel.cs",
@@ -559,7 +651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\ViewModels\\RegisterViewModel.cs",
@@ -571,7 +663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\ViewModels\\LoginViewModel.cs",
@@ -583,7 +675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "ForgotPasswordViewModel.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\ViewModels\\ForgotPasswordViewModel.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\ViewModels\\ForgotPasswordViewModel.cs",
@@ -595,7 +687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "IEmailSender.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Services\\IEmailSender.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Services\\IEmailSender.cs",
@@ -607,7 +699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "EmailSender.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Services\\EmailSender.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Services\\EmailSender.cs",
@@ -619,7 +711,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "Utente.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\Utente.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\Utente.cs",
@@ -631,7 +723,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 42,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\EmailSettings.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\EmailSettings.cs",
@@ -643,43 +735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "ElementoCarrello.cs",
-              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\ElementoCarrello.cs",
-              "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\ElementoCarrello.cs",
-              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\ElementoCarrello.cs",
-              "RelativeToolTip": "MuseoMineralogia\\Models\\ElementoCarrello.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAywBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T15:21:36.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "DettaglioOrdine.cs",
-              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\DettaglioOrdine.cs",
-              "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\DettaglioOrdine.cs",
-              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\DettaglioOrdine.cs",
-              "RelativeToolTip": "MuseoMineralogia\\Models\\DettaglioOrdine.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T15:20:13.814Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Carrello.cs",
-              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\Carrello.cs",
-              "RelativeDocumentMoniker": "MuseoMineralogia\\Models\\Carrello.cs",
-              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Models\\Carrello.cs",
-              "RelativeToolTip": "MuseoMineralogia\\Models\\Carrello.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T15:20:57.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "MuseoContext.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Data\\MuseoContext.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Data\\MuseoContext.cs",
@@ -691,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Controllers\\HomeController.cs",
@@ -703,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Controllers\\AccountController.cs",
@@ -715,7 +771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "20250416101642_FixDecimalPrecision.cs",
               "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Migrations\\20250416101642_FixDecimalPrecision.cs",
               "RelativeDocumentMoniker": "MuseoMineralogia\\Migrations\\20250416101642_FixDecimalPrecision.cs",
@@ -728,21 +784,8 @@
         },
         {
           "DockedHeight": 80,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "20250505182045_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Migrations\\20250505182045_InitialCreate.cs",
-              "RelativeDocumentMoniker": "MuseoMineralogia\\Migrations\\20250505182045_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\Migrations\\20250505182045_InitialCreate.cs",
-              "RelativeToolTip": "MuseoMineralogia\\Migrations\\20250505182045_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T18:20:46.276Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -750,10 +793,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

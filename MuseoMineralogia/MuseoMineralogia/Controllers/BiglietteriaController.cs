@@ -87,6 +87,69 @@ namespace MuseoMineralogia.Controllers
             return View(tipoBiglietto);
         }
 
+        // POST: Biglietteria/AggiungiAlCarrello
+        [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AggiungiAlCarrello(int bigliettoId, int quantita)
+        {
+            // Verifica che i dati siano validi
+            if (quantita <= 0)
+            {
+                TempData["ErrorMessage"] = "La quantità deve essere maggiore di zero";
+                return RedirectToAction("Index");
+            }
+
+            // Ottieni l'utente corrente
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            // Ottieni o crea il carrello dell'utente
+            var carrello = await _context.Carrelli
+                .FirstOrDefaultAsync(c => c.UtenteId == userId);
+
+            if (carrello == null)
+            {
+                carrello = new Carrello
+                {
+                    UtenteId = userId!,
+                    ElementiCarrello = new List<ElementoCarrello>()
+                };
+                _context.Carrelli.Add(carrello);
+                await _context.SaveChangesAsync();
+            }
+
+            // Verifica se l'elemento esiste già nel carrello
+            var elementoEsistente = await _context.ElementiCarrello
+                .FirstOrDefaultAsync(e => e.CarrelloId == carrello.CarrelloId && e.TipoBigliettoId == bigliettoId);
+
+            if (elementoEsistente != null)
+            {
+                // Aggiorna la quantità
+                elementoEsistente.Quantita += quantita;
+            }
+            else
+            {
+                // Aggiungi nuovo elemento
+                var nuovoElemento = new ElementoCarrello
+                {
+                    CarrelloId = carrello.CarrelloId,
+                    TipoBigliettoId = bigliettoId,
+                    Quantita = quantita
+                };
+
+                _context.ElementiCarrello.Add(nuovoElemento);
+            }
+
+            await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Biglietto aggiunto al carrello";
+            return RedirectToAction("Index", "Carrello");
+        }
+
         // POST: Biglietteria/CreaPagamento
         [Authorize]
         [HttpPost]

@@ -2,7 +2,6 @@
 @{
     ViewData["Title"] = "Acquista Biglietto";
 }
-
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-6 offset-md-3">
@@ -14,47 +13,36 @@
                     <h4>@Model.Nome</h4>
                     <p class="lead">Prezzo: €@Model.Prezzo.ToString("F2")</p>
                     <hr />
-
-                    <form id="payment-form">
+                    <form asp-controller="Biglietteria" asp-action="AggiungiAlCarrello" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="bigliettoId" value="@Model.TipoBigliettoId" />
                         <div class="form-group mb-3">
-                            <label for="quantity" class="form-label">Quantità</label>
-                            <input type="number" id="quantity" class="form-control" value="1" min="1" max="10">
+                            <label for="quantita" class="form-label">Quantità</label>
+                            <input type="number" id="quantita" name="quantita" class="form-control" value="1" min="1" max="10">
                             <div class="form-text">Massimo 10 biglietti per ordine</div>
                         </div>
-
                         <div class="form-group mb-3">
                             <label class="form-label">Totale:</label>
                             <h5 id="totalAmount">€@Model.Prezzo.ToString("F2")</h5>
                         </div>
-
                         <div class="mt-4">
                             <a asp-action="Index" class="btn btn-outline-secondary">Annulla</a>
-                            <button type="submit" id="checkout-button" class="btn btn-primary float-end">
-                                <i class="bi bi-credit-card me-2"></i>Procedi al pagamento
+                            <button type="submit" class="btn btn-primary float-end">
+                                <i class="bi bi-cart-plus me-2"></i>Aggiungi al carrello
                             </button>
                         </div>
                     </form>
-
-                    <div id="payment-message" class="alert alert-danger mt-3 d-none"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 @section Scripts {
-    <script src="https://js.stripe.com/v3/"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const stripe = Stripe('@ViewBag.StripePublishableKey');
-            const checkoutButton = document.getElementById('checkout-button');
-            const form = document.getElementById('payment-form');
-            const quantityInput = document.getElementById('quantity');
+            const quantityInput = document.getElementById('quantita');
             const totalAmountElement = document.getElementById('totalAmount');
-            const paymentMessage = document.getElementById('payment-message');
-
-            const unitPrice = parseFloat('@Model.Prezzo'.replace(',', '.'));
-
+           const unitPrice = parseFloat('@(Model.Prezzo.ToString("F2").Replace(",", "."))');
             // Aggiorna il totale quando cambia la quantità
             quantityInput.addEventListener('change', function() {
                 const quantity = parseInt(quantityInput.value);
@@ -68,70 +56,9 @@
                     updateTotal(quantity);
                 }
             });
-
             function updateTotal(quantity) {
                 const total = (unitPrice * quantity).toFixed(2);
                 totalAmountElement.textContent = '€' + total;
-            }
-
-            form.addEventListener('submit', async function(event) {
-                event.preventDefault();
-
-                const quantity = parseInt(quantityInput.value);
-
-                if (quantity < 1 || quantity > 10) {
-                    showMessage('La quantità deve essere compresa tra 1 e 10');
-                    return;
-                }
-
-                // Disabilita il pulsante per prevenire clic multipli
-                checkoutButton.disabled = true;
-                checkoutButton.textContent = 'Elaborazione in corso...';
-
-                try {
-                    // Chiama il backend per creare la sessione Stripe
-                    const response = await fetch('/Biglietteria/CreaPagamento', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                                        body: JSON.stringify({
-            bigliettoId: parseInt('@Model.TipoBigliettoId'),
-            quantita: quantity
-        })
-                    });
-
-                    const data = await response.json();
-
-                    if (!data.success) {
-                        showMessage(data.message || 'Si è verificato un errore. Riprova più tardi.');
-                        return;
-                    }
-
-                    // Redirect a Stripe Checkout
-                    const result = await stripe.redirectToCheckout({
-                        sessionId: data.sessionId
-                    });
-
-                    if (result.error) {
-                        showMessage(result.error.message);
-                    }
-                } catch (error) {
-                    console.error('Error:', error);
-                    showMessage('Si è verificato un errore di connessione. Riprova più tardi.');
-                } finally {
-                    checkoutButton.disabled = false;
-                    checkoutButton.textContent = 'Procedi al pagamento';
-                }
-            });
-
-            function showMessage(messageText) {
-                paymentMessage.textContent = messageText;
-                paymentMessage.classList.remove('d-none');
-
-                setTimeout(function() {
-                    paymentMessage.classList.add('d-none');
-                }, 5000);
             }
         });
     </script>

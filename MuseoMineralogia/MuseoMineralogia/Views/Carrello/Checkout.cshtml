@@ -1,0 +1,136 @@
+﻿@model MuseoMineralogia.Models.Carrello
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<div class="container mt-4">
+    <h1>Riepilogo ordine</h1>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Dettaglio biglietti</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Biglietto</th>
+                                    <th>Prezzo unitario</th>
+                                    <th>Quantità</th>
+                                    <th class="text-end">Totale</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.ElementiCarrello != null && Model.ElementiCarrello.Any())
+                                {
+                                    @foreach (var elemento in Model.ElementiCarrello)
+                                    {
+                                        <tr>
+                                            <td>@elemento.TipoBiglietto?.Nome</td>
+                                            <td>€@(elemento.TipoBiglietto?.Prezzo.ToString("F2"))</td>
+                                            <td>@elemento.Quantita</td>
+                                            <td class="text-end">€@(elemento.TipoBiglietto != null ? (elemento.TipoBiglietto.Prezzo * elemento.Quantita).ToString("F2") : "0.00")</td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="4" class="text-center">Il carrello è vuoto</td>
+                                    </tr>
+                                }
+                                }
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th colspan="3" class="text-end">Totale:</th>
+                                    <th class="text-end">€@Model.CalcolaTotale().ToString("F2")</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Riepilogo pagamento</h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Totale biglietti:</strong> €@Model.CalcolaTotale().ToString("F2")</p>
+                    <hr />
+                    <p><strong>Totale da pagare:</strong> €@Model.CalcolaTotale().ToString("F2")</p>
+
+                    <div class="d-grid gap-2 mt-4">
+                        <form id="payment-form">
+                            @Html.AntiForgeryToken()
+                            <button id="checkout-button" class="btn btn-primary" type="button">
+                                <i class="bi bi-credit-card me-2"></i>Procedi al pagamento
+                            </button>
+                        </form>
+                        <a asp-action="Index" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left me-2"></i>Torna al carrello
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const stripe = Stripe('@ViewBag.StripePublishableKey');
+            const checkoutButton = document.getElementById('checkout-button');
+
+            checkoutButton.addEventListener('click', function() {
+                // Disabilita il pulsante per prevenire clic multipli
+                checkoutButton.disabled = true;
+                checkoutButton.textContent = 'Elaborazione in corso...';
+
+                // Chiamata al controller per creare la sessione Stripe
+                fetch('/Carrello/CreaPagamento', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                    }
+                })
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    if (!data.success) {
+                        alert(data.message || 'Si è verificato un errore. Riprova più tardi.');
+                        checkoutButton.disabled = false;
+                        checkoutButton.textContent = 'Procedi al pagamento';
+                        return;
+                    }
+
+                    // Redirect a Stripe Checkout
+                    return stripe.redirectToCheckout({ sessionId: data.sessionId });
+                })
+                .then(function(result) {
+                    if (result && result.error) {
+                        alert(result.error.message);
+                        checkoutButton.disabled = false;
+                        checkoutButton.textContent = 'Procedi al pagamento';
+                    }
+                })
+                .catch(function(error) {
+                    console.error('Error:', error);
+                    alert('Si è verificato un errore di connessione. Riprova più tardi.');
+                    checkoutButton.disabled = false;
+                    checkoutButton.textContent = 'Procedi al pagamento';
+                });
+            });
+        });
+    </script>
+}
