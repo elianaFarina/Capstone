@@ -1,6 +1,11 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\js\react\assets\ametist.jpg
+wwwroot\js\react\assets\gems.jpg
 wwwroot\js\react\assets\index.js
+wwwroot\js\react\assets\metallic-minerals.jpg
+wwwroot\js\react\assets\rocks.jpg
+wwwroot\js\react\assets\silicates.jpg
 wwwroot\js\react\index.html
 wwwroot\js\react\vite.svg
 wwwroot\js\site.js

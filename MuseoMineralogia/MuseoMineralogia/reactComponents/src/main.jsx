@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Counter from './components/testComponent'
+import Intro from './components/intro'
 
 window.MountReactComponents = {
-    renderCounter: (elementId, props = {}) => {
+    renderIntro: (elementId) => {
         const container = document.getElementById(elementId)
         if (container) {
             ReactDOM.createRoot(container).render(
                 <React.StrictMode>
-                    <Counter {...props} />
+                    <Intro/>
                 </React.StrictMode>
             )
         }

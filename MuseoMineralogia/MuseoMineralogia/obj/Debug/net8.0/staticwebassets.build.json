@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VhLwdcGksg5aCQku+xmxScTM6lUNgJ7+jKZZv2hwYAw=",
+  "Hash": "5648Tkj3tBZobp5eIAbUGvapAg+b3ZSz4SPTC5Lu8+A=",
   "Source": "MuseoMineralogia",
   "BasePath": "_content/MuseoMineralogia",
   "Mode": "Default",
@@ -1333,8 +1333,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "3pug1hdwv1",
+      "Integrity": "Z1RJnDT78l4ZrmNfXVHOewdj+gUVlWxCQEROgJNqxaQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1361,6 +1361,48 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\ametist.jpg",
+      "SourceId": "MuseoMineralogia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\",
+      "BasePath": "_content/MuseoMineralogia",
+      "RelativePath": "js/react/assets/ametist#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gnmlvf8fwa",
+      "Integrity": "FD9w+Hhdc3bs1HvvFPjso0eO55B/k42p6X/CedRluqA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\react\\assets\\ametist.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\gems.jpg",
+      "SourceId": "MuseoMineralogia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\",
+      "BasePath": "_content/MuseoMineralogia",
+      "RelativePath": "js/react/assets/gems#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c5s82tuvhd",
+      "Integrity": "gLaAUQFak0lqmFoE3slEv7M5CXXnE91s7AxAkztTd5o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\react\\assets\\gems.jpg"
+    },
+    {
       "Identity": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\index.js",
       "SourceId": "MuseoMineralogia",
       "SourceType": "Discovered",
@@ -1375,11 +1417,74 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "eqv8zyyhq3",
-      "Integrity": "pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8=",
+      "Fingerprint": "98a8i3jx6m",
+      "Integrity": "N2zKC4mMzmrvYmW6dosYeG3Y12Et6farp0K/wV4tvQQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\react\\assets\\index.js"
+    },
+    {
+      "Identity": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\metallic-minerals.jpg",
+      "SourceId": "MuseoMineralogia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\",
+      "BasePath": "_content/MuseoMineralogia",
+      "RelativePath": "js/react/assets/metallic-minerals#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fkg3yc3vbn",
+      "Integrity": "YYdoj6ZnvpqOP8zd8wHJXzOYCkSfOkv5P1HkHzx0/ZE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\react\\assets\\metallic-minerals.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\rocks.jpg",
+      "SourceId": "MuseoMineralogia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\",
+      "BasePath": "_content/MuseoMineralogia",
+      "RelativePath": "js/react/assets/rocks#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ojqsrslssy",
+      "Integrity": "nE+OX+rlXPSzYKbkZfWKIwXg0QLzPpghsggNk5TXCMM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\react\\assets\\rocks.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\silicates.jpg",
+      "SourceId": "MuseoMineralogia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\",
+      "BasePath": "_content/MuseoMineralogia",
+      "RelativePath": "js/react/assets/silicates#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "te5d5qehnv",
+      "Integrity": "W7ZZD9eoLumvo8ET0VgPsMGWypwh29T55h8O2kG967I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\react\\assets\\silicates.jpg"
     },
     {
       "Identity": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\index.html",
@@ -2644,7 +2749,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.c2tiyv64ts.css",
+      "Route": "css/site.3pug1hdwv1.css",
       "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2654,7 +2759,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "500"
         },
         {
           "Name": "Content-Type",
@@ -2662,11 +2767,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"Z1RJnDT78l4ZrmNfXVHOewdj+gUVlWxCQEROgJNqxaQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 09:00:24 GMT"
+          "Value": "Wed, 07 May 2025 18:37:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2676,7 +2781,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "3pug1hdwv1"
         },
         {
           "Name": "label",
@@ -2684,7 +2789,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-Z1RJnDT78l4ZrmNfXVHOewdj+gUVlWxCQEROgJNqxaQ="
         }
       ]
     },
@@ -2699,7 +2804,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "500"
         },
         {
           "Name": "Content-Type",
@@ -2707,11 +2812,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"Z1RJnDT78l4ZrmNfXVHOewdj+gUVlWxCQEROgJNqxaQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 09:00:24 GMT"
+          "Value": "Wed, 07 May 2025 18:37:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2721,7 +2826,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-Z1RJnDT78l4ZrmNfXVHOewdj+gUVlWxCQEROgJNqxaQ="
         }
       ]
     },
@@ -5028,8 +5133,8 @@
       ]
     },
     {
-      "Route": "js/react/assets/index.eqv8zyyhq3.js",
-      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\index.js",
+      "Route": "js/react/assets/ametist.gnmlvf8fwa.jpg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\ametist.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5038,19 +5143,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "188003"
+          "Value": "2241338"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/javascript"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8=\""
+          "Value": "\"FD9w+Hhdc3bs1HvvFPjso0eO55B/k42p6X/CedRluqA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 16:53:42 GMT"
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5060,7 +5165,171 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eqv8zyyhq3"
+          "Value": "gnmlvf8fwa"
+        },
+        {
+          "Name": "label",
+          "Value": "js/react/assets/ametist.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FD9w+Hhdc3bs1HvvFPjso0eO55B/k42p6X/CedRluqA="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/ametist.jpg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\ametist.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2241338"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FD9w+Hhdc3bs1HvvFPjso0eO55B/k42p6X/CedRluqA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FD9w+Hhdc3bs1HvvFPjso0eO55B/k42p6X/CedRluqA="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/gems.c5s82tuvhd.jpg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\gems.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "793278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gLaAUQFak0lqmFoE3slEv7M5CXXnE91s7AxAkztTd5o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c5s82tuvhd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/react/assets/gems.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gLaAUQFak0lqmFoE3slEv7M5CXXnE91s7AxAkztTd5o="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/gems.jpg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\gems.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "793278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gLaAUQFak0lqmFoE3slEv7M5CXXnE91s7AxAkztTd5o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gLaAUQFak0lqmFoE3slEv7M5CXXnE91s7AxAkztTd5o="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/index.98a8i3jx6m.js",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206594"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N2zKC4mMzmrvYmW6dosYeG3Y12Et6farp0K/wV4tvQQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "98a8i3jx6m"
         },
         {
           "Name": "label",
@@ -5068,7 +5337,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8="
+          "Value": "sha256-N2zKC4mMzmrvYmW6dosYeG3Y12Et6farp0K/wV4tvQQ="
         }
       ]
     },
@@ -5083,7 +5352,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "188003"
+          "Value": "206594"
         },
         {
           "Name": "Content-Type",
@@ -5091,11 +5360,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8=\""
+          "Value": "\"N2zKC4mMzmrvYmW6dosYeG3Y12Et6farp0K/wV4tvQQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 16:53:42 GMT"
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5105,7 +5374,253 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pn2ZIKicXpRSKYH0EJWu9NMsMrcdZyeo4sGUA14DDw8="
+          "Value": "sha256-N2zKC4mMzmrvYmW6dosYeG3Y12Et6farp0K/wV4tvQQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/metallic-minerals.fkg3yc3vbn.jpg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\metallic-minerals.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2142776"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YYdoj6ZnvpqOP8zd8wHJXzOYCkSfOkv5P1HkHzx0/ZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fkg3yc3vbn"
+        },
+        {
+          "Name": "label",
+          "Value": "js/react/assets/metallic-minerals.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YYdoj6ZnvpqOP8zd8wHJXzOYCkSfOkv5P1HkHzx0/ZE="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/metallic-minerals.jpg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\metallic-minerals.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2142776"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YYdoj6ZnvpqOP8zd8wHJXzOYCkSfOkv5P1HkHzx0/ZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YYdoj6ZnvpqOP8zd8wHJXzOYCkSfOkv5P1HkHzx0/ZE="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/rocks.jpg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\rocks.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5145783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nE+OX+rlXPSzYKbkZfWKIwXg0QLzPpghsggNk5TXCMM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nE+OX+rlXPSzYKbkZfWKIwXg0QLzPpghsggNk5TXCMM="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/rocks.ojqsrslssy.jpg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\rocks.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5145783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nE+OX+rlXPSzYKbkZfWKIwXg0QLzPpghsggNk5TXCMM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ojqsrslssy"
+        },
+        {
+          "Name": "label",
+          "Value": "js/react/assets/rocks.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nE+OX+rlXPSzYKbkZfWKIwXg0QLzPpghsggNk5TXCMM="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/silicates.jpg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\silicates.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1899756"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W7ZZD9eoLumvo8ET0VgPsMGWypwh29T55h8O2kG967I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W7ZZD9eoLumvo8ET0VgPsMGWypwh29T55h8O2kG967I="
+        }
+      ]
+    },
+    {
+      "Route": "js/react/assets/silicates.te5d5qehnv.jpg",
+      "AssetFile": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\silicates.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1899756"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W7ZZD9eoLumvo8ET0VgPsMGWypwh29T55h8O2kG967I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "te5d5qehnv"
+        },
+        {
+          "Name": "label",
+          "Value": "js/react/assets/silicates.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W7ZZD9eoLumvo8ET0VgPsMGWypwh29T55h8O2kG967I="
         }
       ]
     },
@@ -5132,7 +5647,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 16:53:42 GMT"
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5177,7 +5692,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 16:53:42 GMT"
+          "Value": "Wed, 07 May 2025 18:45:55 GMT"
         },
         {
           "Name": "Cache-Control",
