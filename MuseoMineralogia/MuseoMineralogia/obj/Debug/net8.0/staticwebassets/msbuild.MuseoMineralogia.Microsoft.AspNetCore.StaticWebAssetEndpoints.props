@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/css/site.3pug1hdwv1.css">
+    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/css/site.a1awak7a85.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3pug1hdwv1"},{"Name":"integrity","Value":"sha256-Z1RJnDT78l4ZrmNfXVHOewdj\u002BgUVlWxCQEROgJNqxaQ="},{"Name":"label","Value":"_content/MuseoMineralogia/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"500"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Z1RJnDT78l4ZrmNfXVHOewdj\u002BgUVlWxCQEROgJNqxaQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 18:37:00 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"a1awak7a85"},{"Name":"integrity","Value":"sha256-zgTQfKRfMLpe/q\u002BTUcUY6q4P\u002BUeMtvXm957i2AbhEFY="},{"Name":"label","Value":"_content/MuseoMineralogia/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1159"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022zgTQfKRfMLpe/q\u002BTUcUY6q4P\u002BUeMtvXm957i2AbhEFY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 11:12:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Z1RJnDT78l4ZrmNfXVHOewdj\u002BgUVlWxCQEROgJNqxaQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"500"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Z1RJnDT78l4ZrmNfXVHOewdj\u002BgUVlWxCQEROgJNqxaQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 18:37:00 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zgTQfKRfMLpe/q\u002BTUcUY6q4P\u002BUeMtvXm957i2AbhEFY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1159"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022zgTQfKRfMLpe/q\u002BTUcUY6q4P\u002BUeMtvXm957i2AbhEFY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 11:12:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -36,17 +36,29 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FD9w\u002BHhdc3bs1HvvFPjso0eO55B/k42p6X/CedRluqA="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2241338"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022FD9w\u002BHhdc3bs1HvvFPjso0eO55B/k42p6X/CedRluqA=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 18:45:55 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/assets/gems.c5s82tuvhd.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\assets\gems.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/assets/fluorite.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\assets\fluorite.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c5s82tuvhd"},{"Name":"integrity","Value":"sha256-gLaAUQFak0lqmFoE3slEv7M5CXXnE91s7AxAkztTd5o="},{"Name":"label","Value":"_content/MuseoMineralogia/js/react/assets/gems.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"793278"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022gLaAUQFak0lqmFoE3slEv7M5CXXnE91s7AxAkztTd5o=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 18:45:55 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jf34uZRCPite6QkjWTHQLnSbk7VSmC/1RA74T0HdW/k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"67029"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Jf34uZRCPite6QkjWTHQLnSbk7VSmC/1RA74T0HdW/k=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 12:32:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/assets/gems.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\assets\gems.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/assets/fluorite.tqi5v0903w.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\assets\fluorite.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gLaAUQFak0lqmFoE3slEv7M5CXXnE91s7AxAkztTd5o="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"793278"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022gLaAUQFak0lqmFoE3slEv7M5CXXnE91s7AxAkztTd5o=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 18:45:55 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tqi5v0903w"},{"Name":"integrity","Value":"sha256-Jf34uZRCPite6QkjWTHQLnSbk7VSmC/1RA74T0HdW/k="},{"Name":"label","Value":"_content/MuseoMineralogia/js/react/assets/fluorite.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"67029"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Jf34uZRCPite6QkjWTHQLnSbk7VSmC/1RA74T0HdW/k=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 12:32:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/assets/img1.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\assets\img1.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002BuE\u002BELuAniEskfWlJNcbstCFJLMHOko\u002B/yeAk2\u002BaF8A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"61677"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022\u002BuE\u002BELuAniEskfWlJNcbstCFJLMHOko\u002B/yeAk2\u002BaF8A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 12:27:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/assets/img1.qk5vsee9bq.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\assets\img1.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qk5vsee9bq"},{"Name":"integrity","Value":"sha256-\u002BuE\u002BELuAniEskfWlJNcbstCFJLMHOko\u002B/yeAk2\u002BaF8A="},{"Name":"label","Value":"_content/MuseoMineralogia/js/react/assets/img1.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"61677"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022\u002BuE\u002BELuAniEskfWlJNcbstCFJLMHOko\u002B/yeAk2\u002BaF8A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 12:27:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MuseoMineralogia/js/react/assets/index.98a8i3jx6m.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\react\assets\index.js'))</AssetFile>

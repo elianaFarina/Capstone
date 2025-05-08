@@ -1,18 +1,128 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+
+<div class="museo-home container mx-auto px-4 py-8">
+    <div class="border border-secondary p-5">
+        <div class="d-flex justify-content-center mb-4">
+            <div class="p-4 text-center" style="width: 500px;">
+                <img src="/js/react/assets/img1.jpeg" alt="Museo dei Minerali" class="img-fluid" style="max-height: 400px;" />
+            </div>
+        </div>
+
+        <!-- Descrizione museo -->
+        <div class="text-center mb-5">
+            <p>
+                Il Museo dei Minerali offre un'esperienza unica nel suo genere, con una vasta collezione
+                di esemplari provenienti da tutto il mondo. Situato nel cuore della città, il nostro museo
+                è dedicato alla conservazione e all'esposizione delle meraviglie mineralogiche del nostro pianeta.
+            </p>
+        </div>
+
+        <!-- Carosello Bootstrap -->
+        <div class="d-flex justify-content-center mb-5">
+            <div class="border border-dark p-4" style="max-width: 700px; width: 100%;">
+                <div id="carouselMinerali" class="carousel slide" data-ride="carousel">
+                    <!-- Indicatori -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselMinerali" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselMinerali" data-slide-to="1"></li>
+                        <li data-target="#carouselMinerali" data-slide-to="2"></li>
+                        <li data-target="#carouselMinerali" data-slide-to="3"></li>
+                        <li data-target="#carouselMinerali" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner rounded">
+                        <!-- SLIDE 1 -->
+                        <div class="carousel-item active">
+                            <img src="/js/react/assets/ametist.jpg" alt="Ametista" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                <h5>Ametista</h5>
+                                <p>Cristalli di ametista dal Brasile</p>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 2 -->
+                        <div class="carousel-item">
+                            <img src="/js/react/assets/metallic-minerals.jpg" alt="Pirite" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                <h5>Pirite</h5>
+                                <p>Formazione cubica di pirite</p>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 3 -->
+                        <div class="carousel-item">
+                            <img src="/js/react/assets/fluorite.jpeg" alt="Fluorite" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                <h5>Fluorite</h5>
+                                <p>Cristalli di fluorite colorata</p>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 4 -->
+                        <div class="carousel-item">
+                            <img src="/js/react/assets/silicates.jpg" alt="Silicati" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                <h5>Silicati</h5>
+                                <p>Silicati</p>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 5 -->
+                        <div class="carousel-item">
+                            <img src="/js/react/assets/rocks.jpg" alt="Rocce" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                <h5>Rocce</h5>
+                                <p>Rocce dal Mondo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controlli -->
+                    <a class="carousel-control-prev" href="#carouselMinerali" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Precedente</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselMinerali" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Successivo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descrizione delle collezioni -->
+        <div class="text-center">
+            <div class="mx-auto" style="max-width: 600px;">
+                <p>
+                    La nostra collezione comprende una vasta gamma di minerali, dalle comuni rocce
+                    sedimentarie ai rari e preziosi cristalli. Potrete ammirare:
+                </p>
+                <ul class="list-unstyled">
+                    <li>Cristalli di quarzo e ametista di varie dimensioni</li>
+                    <li>Minerali fluorescenti che brillano sotto luci speciali</li>
+                    <li>Gemme preziose allo stato grezzo e lavorato</li>
+                    <li>Meteoriti e tectiti provenienti dallo spazio</li>
+                    <li>Fossili mineralizzati di diverse epoche geologiche</li>
+                </ul>
+                <p>
+                    Ogni esemplare è accompagnato da descrizioni dettagliate sulla sua origine,
+                    composizione chimica e proprietà.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 @section Scripts {
-    <script src="~/js/react/assets/index.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          // Monta il componente React
-          window.MountReactComponents.renderIntro('intro-container');
+        $(document).ready(function() {
+            $('#carouselMinerali').carousel({
+                interval: 3000,
+                pause: 'hover'
+            });
         });
     </script>
 }
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-<div id="intro-container"></div>
-

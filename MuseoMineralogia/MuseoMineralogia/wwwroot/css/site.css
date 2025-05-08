@@ -2,12 +2,52 @@ html {
   font-size: 14px;
 }
 
-navbar, footer {
+footer {
     background-color: #CCE3DE!important
 }
 
-#museo-intro {display:flex;
+.museo-intro {display:flex;
               justify-content:center
+}
+.museo-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+
+.header-section {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+
+.museum-carousel {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 @media (min-width: 768px) {

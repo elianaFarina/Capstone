@@ -1,7 +1,8 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\react\assets\ametist.jpg
-wwwroot\js\react\assets\gems.jpg
+wwwroot\js\react\assets\fluorite.jpeg
+wwwroot\js\react\assets\img1.jpeg
 wwwroot\js\react\assets\index.js
 wwwroot\js\react\assets\metallic-minerals.jpg
 wwwroot\js\react\assets\rocks.jpg
