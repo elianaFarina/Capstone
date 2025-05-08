@@ -1,11 +1,11 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter } from 'lucide-react';
-import "./intro.css"
-const Intro = () => {
+
+const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="text-white pt-5 pb-4" id="custom-footer">
+        <footer className="bg-dark text-white pt-5 pb-4">
             <div className="container">
                 <div className="row">
                     {/* Informazioni di contatto */}
@@ -31,15 +31,15 @@ const Intro = () => {
                         <div className="d-flex align-items-center mb-3">
                             <Clock size={20} className="me-2" />
                             <div>
-                                <p className="mb-0">Martedi - Venerdi: 9:00 - 17:00</p>
+                                <p className="mb-0">Martedì - Venerdì: 9:00 - 17:00</p>
                                 <p className="mb-0">Sabato - Domenica: 10:00 - 18:00</p>
-                                <p className="mb-0">Lunedi: Chiuso</p>
+                                <p className="mb-0">Lunedì: Chiuso</p>
                             </div>
                         </div>
                         <div className="mt-4">
                             <h6 className="mb-3">Biglietti</h6>
-                            <p className="mb-1">Adulti: 10,00 euro</p>
-                            <p className="mb-1">Ridotto (studenti, over 65): 7,00 euro</p>
+                            <p className="mb-1">Adulti: €10,00</p>
+                            <p className="mb-1">Ridotto (studenti, over 65): €7,00</p>
                             <p className="mb-1">Bambini (sotto i 12 anni): Gratuito</p>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ const Intro = () => {
                 <div className="row align-items-center">
                     <div className="col-md-8">
                         <p className="mb-md-0">
-                            {currentYear} Museo di Mineralogia - Tutti i diritti riservati
+                            © {currentYear} Museo di Mineralogia - Tutti i diritti riservati
                         </p>
                     </div>
                     <div className="col-md-4">
@@ -97,4 +97,4 @@ const Intro = () => {
     );
 };
 
-export default Intro;
+export default Footer;

@@ -13,32 +13,40 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\ametist.jpg",
-      "PackagePath": "staticwebassets\\js\\react\\assets\\ametist.jpg"
+      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\img\\ametist.jpg",
+      "PackagePath": "staticwebassets\\img\\ametist.jpg"
     },
     {
-      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\fluorite.jpeg",
-      "PackagePath": "staticwebassets\\js\\react\\assets\\fluorite.jpeg"
+      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\img\\fluorite.jpeg",
+      "PackagePath": "staticwebassets\\img\\fluorite.jpeg"
     },
     {
-      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\img1.jpeg",
-      "PackagePath": "staticwebassets\\js\\react\\assets\\img1.jpeg"
+      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\img\\gems.jpg",
+      "PackagePath": "staticwebassets\\img\\gems.jpg"
+    },
+    {
+      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\img\\img1.jpeg",
+      "PackagePath": "staticwebassets\\img\\img1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\img\\metallic-minerals.jpg",
+      "PackagePath": "staticwebassets\\img\\metallic-minerals.jpg"
+    },
+    {
+      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\img\\rocks.jpg",
+      "PackagePath": "staticwebassets\\img\\rocks.jpg"
+    },
+    {
+      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\img\\silicates.jpg",
+      "PackagePath": "staticwebassets\\img\\silicates.jpg"
+    },
+    {
+      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\index.css",
+      "PackagePath": "staticwebassets\\js\\react\\assets\\index.css"
     },
     {
       "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\index.js",
       "PackagePath": "staticwebassets\\js\\react\\assets\\index.js"
-    },
-    {
-      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\metallic-minerals.jpg",
-      "PackagePath": "staticwebassets\\js\\react\\assets\\metallic-minerals.jpg"
-    },
-    {
-      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\rocks.jpg",
-      "PackagePath": "staticwebassets\\js\\react\\assets\\rocks.jpg"
-    },
-    {
-      "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\assets\\silicates.jpg",
-      "PackagePath": "staticwebassets\\js\\react\\assets\\silicates.jpg"
     },
     {
       "Id": "C:\\Users\\elifa\\Documents\\GitHub\\Capstone\\MuseoMineralogia\\MuseoMineralogia\\wwwroot\\js\\react\\index.html",
