@@ -35,7 +35,7 @@ namespace MuseoMineralogia.Controllers
             _logger = logger;
             _configuration = configuration;
         }
-        // GET: Carrello
+        
         public async Task<IActionResult> Index()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -46,7 +46,6 @@ namespace MuseoMineralogia.Controllers
 
             var carrello = await OttieniOCreaCarrello(userId);
 
-            // Carica gli elementi del carrello e i relativi biglietti
             await _context.Entry(carrello)
                 .Collection(c => c.ElementiCarrello!)
                 .LoadAsync();
@@ -64,7 +63,6 @@ namespace MuseoMineralogia.Controllers
             return View(carrello);
         }
 
-        // POST: Carrello/Aggiungi
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Aggiungi(int bigliettoId, int quantita)
@@ -80,18 +78,17 @@ namespace MuseoMineralogia.Controllers
 
             var carrello = await OttieniOCreaCarrello(userId);
 
-            // Verifica se l'elemento esiste già nel carrello
             var elementoEsistente = await _context.ElementiCarrello
                 .FirstOrDefaultAsync(e => e.CarrelloId == carrello.CarrelloId && e.TipoBigliettoId == bigliettoId);
 
             if (elementoEsistente != null)
             {
-                // Aggiorna la quantità
+           
                 elementoEsistente.Quantita += quantita;
             }
             else
             {
-                // Aggiungi nuovo elemento
+           
                 var nuovoElemento = new ElementoCarrello
                 {
                     CarrelloId = carrello.CarrelloId,
@@ -108,7 +105,6 @@ namespace MuseoMineralogia.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // POST: Carrello/Rimuovi
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Rimuovi(int elementoId)
@@ -135,7 +131,6 @@ namespace MuseoMineralogia.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // POST: Carrello/SvuotaCarrello
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SvuotaCarrello()
@@ -163,7 +158,6 @@ namespace MuseoMineralogia.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: Carrello/Checkout
         public async Task<IActionResult> Checkout()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -174,7 +168,6 @@ namespace MuseoMineralogia.Controllers
 
             var carrello = await OttieniOCreaCarrello(userId);
 
-            // Carica gli elementi del carrello e i relativi biglietti
             await _context.Entry(carrello)
                 .Collection(c => c.ElementiCarrello!)
                 .LoadAsync();
@@ -196,7 +189,6 @@ namespace MuseoMineralogia.Controllers
             return View(carrello);
         }
 
-        // POST: Carrello/CreaPagamento
         [HttpPost]
         [Authorize]
         [ValidateAntiForgeryToken]
@@ -218,7 +210,6 @@ namespace MuseoMineralogia.Controllers
 
                 var carrello = await OttieniOCreaCarrello(userId);
 
-                // Carica gli elementi del carrello e i relativi biglietti
                 await _context.Entry(carrello)
                     .Collection(c => c.ElementiCarrello!)
                     .LoadAsync();
@@ -228,7 +219,6 @@ namespace MuseoMineralogia.Controllers
                     return BadRequest(new { success = false, message = "Il carrello è vuoto" });
                 }
 
-                // Carica i dettagli dei biglietti
                 foreach (var elemento in carrello.ElementiCarrello)
                 {
                     await _context.Entry(elemento)
@@ -236,7 +226,6 @@ namespace MuseoMineralogia.Controllers
                         .LoadAsync();
                 }
 
-                // Crea elementi per Stripe
                 var lineItems = new List<SessionLineItemOptions>();
 
                 foreach (var elemento in carrello.ElementiCarrello)
@@ -247,7 +236,7 @@ namespace MuseoMineralogia.Controllers
                         {
                             PriceData = new SessionLineItemPriceDataOptions
                             {
-                                UnitAmount = (long)(elemento.TipoBiglietto.Prezzo * 100), // Converti in centesimi
+                                UnitAmount = (long)(elemento.TipoBiglietto.Prezzo * 100),
                                 Currency = "eur",
                                 ProductData = new SessionLineItemPriceDataProductDataOptions
                                 {
@@ -260,7 +249,6 @@ namespace MuseoMineralogia.Controllers
                     }
                 }
 
-                // Crea la sessione Stripe
                 var options = new SessionCreateOptions
                 {
                     PaymentMethodTypes = new List<string> { "card" },
@@ -274,7 +262,6 @@ namespace MuseoMineralogia.Controllers
                 var service = new SessionService();
                 Session session = await service.CreateAsync(options);
 
-                // Salva informazioni dell'ordine nel database
                 var ordine = new Ordine
                 {
                     UtenteId = userId,
@@ -287,7 +274,6 @@ namespace MuseoMineralogia.Controllers
                 _context.Ordini.Add(ordine);
                 await _context.SaveChangesAsync();
 
-                // Aggiungi dettagli ordine
                 foreach (var elemento in carrello.ElementiCarrello)
                 {
                     if (elemento.TipoBiglietto != null)
@@ -306,7 +292,6 @@ namespace MuseoMineralogia.Controllers
 
                 await _context.SaveChangesAsync();
 
-                // Svuota il carrello dopo aver creato l'ordine
                 var elementiCarrello = await _context.ElementiCarrello
                     .Where(e => e.CarrelloId == carrello.CarrelloId)
                     .ToListAsync();
@@ -314,7 +299,6 @@ namespace MuseoMineralogia.Controllers
                 _context.ElementiCarrello.RemoveRange(elementiCarrello);
                 await _context.SaveChangesAsync();
 
-                // Ritorna il Session ID per il redirect a Stripe Checkout
                 return Json(new { success = true, sessionId = session.Id });
             }
             catch (Exception ex)
@@ -324,7 +308,6 @@ namespace MuseoMineralogia.Controllers
             }
         }
 
-        // Metodo helper per ottenere o creare un carrello
         private async Task<Carrello> OttieniOCreaCarrello(string userId)
         {
             if (string.IsNullOrEmpty(userId))

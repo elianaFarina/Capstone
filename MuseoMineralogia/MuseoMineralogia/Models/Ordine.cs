@@ -19,7 +19,6 @@ namespace MuseoMineralogia.Models
         [StringLength(50)]
         public string? Stato { get; set; }
 
-        // Proprietà aggiuntive per Stripe
         [StringLength(100)]
         public string? SessionId { get; set; }
 

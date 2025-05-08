@@ -7,12 +7,12 @@ using Microsoft.Extensions.Options;
 using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
-// Add services to the container
+
 builder.Services.AddControllersWithViews();
-// Configura DbContext
+
 builder.Services.AddDbContext<MuseoContext>(options =>
    options.UseSqlServer(builder.Configuration.GetConnectionString("MuseoConnection")));
-// Configura Identity
+
 builder.Services.AddIdentity<Utente, IdentityRole>(options => {
     options.Password.RequireDigit = true;
     options.Password.RequiredLength = 8;
@@ -25,31 +25,30 @@ builder.Services.AddIdentity<Utente, IdentityRole>(options => {
 })
 .AddEntityFrameworkStores<MuseoContext>()
 .AddDefaultTokenProviders();
-// Configurazione della durata del token per il reset della password
+
 builder.Services.Configure<DataProtectionTokenProviderOptions>(opt =>
     opt.TokenLifespan = TimeSpan.FromHours(2));
-// Configura Cookie
+
 builder.Services.ConfigureApplicationCookie(options => {
     options.LoginPath = "/Account/Login";
     options.LogoutPath = "/Account/Logout";
     options.AccessDeniedPath = "/Account/AccessDenied";
     options.ExpireTimeSpan = TimeSpan.FromDays(14);
 });
-// Configura il servizio email
+
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
-// Configura Stripe
+
 builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 
 var app = builder.Build();
-// Configure the HTTP request pipeline
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
 
-// Configurazione global di Stripe
 var stripeOptions = app.Services.GetRequiredService<IOptions<StripeSettings>>();
 StripeConfiguration.ApiKey = stripeOptions.Value.SecretKey;
 
@@ -61,7 +60,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
    name: "default",
    pattern: "{controller=Home}/{action=Index}/{id?}");
-// Seeding dei ruoli e dell'account admin
+
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -98,7 +97,6 @@ using (var scope = app.Services.CreateScope())
             }
         }
 
-        // Seeding dei tipi di biglietto
         if (!context.TipiBiglietto.Any())
         {
             context.TipiBiglietto.AddRange(

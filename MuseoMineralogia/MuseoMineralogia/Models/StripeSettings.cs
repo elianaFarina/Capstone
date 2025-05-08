@@ -9,7 +9,7 @@ namespace MuseoMineralogia.Models
         public string WebhookSecret { get; set; } = string.Empty;
     }
 
-    // Classe per tracciare i dati della sessione Stripe
+   
     public class OrdineStripe
     {
         public string SessionId { get; set; } = string.Empty;

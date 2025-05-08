@@ -43,7 +43,7 @@
             const quantityInput = document.getElementById('quantita');
             const totalAmountElement = document.getElementById('totalAmount');
            const unitPrice = parseFloat('@(Model.Prezzo.ToString("F2").Replace(",", "."))');
-            // Aggiorna il totale quando cambia la quantità
+           
             quantityInput.addEventListener('change', function() {
                 const quantity = parseInt(quantityInput.value);
                 if (quantity < 1) {

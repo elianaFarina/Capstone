@@ -110,14 +110,13 @@ namespace MuseoMineralogia.Controllers
             return View();
         }
 
-        // Azione GET per la pagina "Password dimenticata"
+     
         [HttpGet]
         public IActionResult ForgotPassword()
         {
             return View();
         }
 
-        // Azione POST per gestire la richiesta di reset password
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ForgotPassword(ForgotPasswordModel forgotPasswordModel)
@@ -125,7 +124,7 @@ namespace MuseoMineralogia.Controllers
             if (!ModelState.IsValid)
                 return View(forgotPasswordModel);
 
-            // Controlla che l'email non sia null
+            
             if (string.IsNullOrEmpty(forgotPasswordModel?.Email))
             {
                 ModelState.AddModelError(string.Empty, "Email non valida");
@@ -134,21 +133,17 @@ namespace MuseoMineralogia.Controllers
 
             var user = await _userManager.FindByEmailAsync(forgotPasswordModel.Email);
 
-            // Per sicurezza, reindirizza comunque alla pagina di conferma anche se l'utente non esiste
             if (user == null)
                 return RedirectToAction("ForgotPasswordConfirmation");
 
-            // Genera il token di reset
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
 
-            // Crea il link di callback
             var callback = Url.Action("ResetPassword", "Account",
                                      new { token, email = user.Email }, Request.Scheme);
 
-            // Controlla che gli argomenti email e subject non siano null
             if (!string.IsNullOrEmpty(user.Email))
             {
-                // Invia l'email con il link di reset
+
                 await _emailSender.SendEmailAsync(
                     user.Email,
                     "Reset Password - Museo Mineralogia",
@@ -158,14 +153,13 @@ namespace MuseoMineralogia.Controllers
             return RedirectToAction("ForgotPasswordConfirmation");
         }
 
-        // Pagina di conferma per il "Password dimenticata"
         [HttpGet]
         public IActionResult ForgotPasswordConfirmation()
         {
             return View();
         }
 
-        // Azione GET per la pagina di reset password (quando l'utente clicca sul link nell'email)
+
         [HttpGet]
         public IActionResult ResetPassword(string token, string email)
         {
@@ -182,7 +176,7 @@ namespace MuseoMineralogia.Controllers
             return View(model);
         }
 
-        // Azione POST per elaborare il reset della password
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ResetPassword(ResetPasswordModel resetPasswordModel)
@@ -190,7 +184,7 @@ namespace MuseoMineralogia.Controllers
             if (!ModelState.IsValid)
                 return View(resetPasswordModel);
 
-            // Controlla che l'email non sia null
+
             if (string.IsNullOrEmpty(resetPasswordModel?.Email))
             {
                 ModelState.AddModelError(string.Empty, "Email non valida");
@@ -202,21 +196,19 @@ namespace MuseoMineralogia.Controllers
             if (user == null)
                 return RedirectToAction("ResetPasswordConfirmation");
 
-            // Controlla che il token non sia null
+
             if (string.IsNullOrEmpty(resetPasswordModel?.Token))
             {
                 ModelState.AddModelError(string.Empty, "Token non valido");
                 return View(resetPasswordModel);
             }
 
-            // Controlla che la password non sia null
             if (string.IsNullOrEmpty(resetPasswordModel?.Password))
             {
                 ModelState.AddModelError(string.Empty, "Password non valida");
                 return View(resetPasswordModel);
             }
 
-            // Resetta la password usando il token e la nuova password
             var resetPassResult = await _userManager.ResetPasswordAsync(user,
                                                                      resetPasswordModel.Token,
                                                                      resetPasswordModel.Password);
@@ -233,7 +225,6 @@ namespace MuseoMineralogia.Controllers
             return RedirectToAction("ResetPasswordConfirmation");
         }
 
-        // Pagina di conferma per il reset password completato
         [HttpGet]
         public IActionResult ResetPasswordConfirmation()
         {

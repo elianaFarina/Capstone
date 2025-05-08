@@ -20,7 +20,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <!--  navbar -->
+                    
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a>
@@ -28,7 +28,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="Biglietteria" asp-action="Index">Biglietteria</a>
                         </li>
-                        <!-- Altri elementi del menu -->
+                     
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         @if (User.Identity?.IsAuthenticated == true)
@@ -77,28 +77,23 @@
         </main>
     </div>
 
-    <!--Footer-->
     <div id="intro-container"></div>
     <footer class="border-top footer text-muted" id="footer-extra">
         <div class="container">
         </div>
     </footer>
 
-    
-
-    <!-- Script di base -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    <!-- Carica React e il bundle del componente -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="~/js/react/assets/index.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Verifica che MountReactComponents esista prima di usarlo
+            
             if (window.MountReactComponents && typeof window.MountReactComponents.renderIntro === 'function') {
                 window.MountReactComponents.renderIntro('intro-container');
             } else {

@@ -34,7 +34,7 @@ namespace MuseoMineralogia.Controllers
             _logger = logger;
         }
 
-        // GET: Biglietteria
+    
         public async Task<IActionResult> Index()
         {
             try
@@ -49,7 +49,6 @@ namespace MuseoMineralogia.Controllers
             }
         }
 
-        // GET: Biglietteria/Dettaglio/5
         public async Task<IActionResult> Dettaglio(int? id)
         {
             if (id == null)
@@ -67,7 +66,6 @@ namespace MuseoMineralogia.Controllers
             return View(tipoBiglietto);
         }
 
-        // GET: Biglietteria/Acquista/5
         [Authorize]
         public async Task<IActionResult> Acquista(int? id)
         {
@@ -87,27 +85,25 @@ namespace MuseoMineralogia.Controllers
             return View(tipoBiglietto);
         }
 
-        // POST: Biglietteria/AggiungiAlCarrello
         [HttpPost]
         [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AggiungiAlCarrello(int bigliettoId, int quantita)
         {
-            // Verifica che i dati siano validi
+  
             if (quantita <= 0)
             {
                 TempData["ErrorMessage"] = "La quantità deve essere maggiore di zero";
                 return RedirectToAction("Index");
             }
 
-            // Ottieni l'utente corrente
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (userId == null)
             {
                 return RedirectToAction("Login", "Account");
             }
 
-            // Ottieni o crea il carrello dell'utente
+           
             var carrello = await _context.Carrelli
                 .FirstOrDefaultAsync(c => c.UtenteId == userId);
 
@@ -122,18 +118,17 @@ namespace MuseoMineralogia.Controllers
                 await _context.SaveChangesAsync();
             }
 
-            // Verifica se l'elemento esiste già nel carrello
             var elementoEsistente = await _context.ElementiCarrello
                 .FirstOrDefaultAsync(e => e.CarrelloId == carrello.CarrelloId && e.TipoBigliettoId == bigliettoId);
 
             if (elementoEsistente != null)
             {
-                // Aggiorna la quantità
+                
                 elementoEsistente.Quantita += quantita;
             }
             else
             {
-                // Aggiungi nuovo elemento
+                
                 var nuovoElemento = new ElementoCarrello
                 {
                     CarrelloId = carrello.CarrelloId,
@@ -150,20 +145,18 @@ namespace MuseoMineralogia.Controllers
             return RedirectToAction("Index", "Carrello");
         }
 
-        // POST: Biglietteria/CreaPagamento
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreaPagamento([FromBody] AcquistoModel model)
         {
             try
             {
-                // Validazione input
                 if (model == null || model.BigliettoId <= 0 || model.Quantita <= 0)
                 {
                     return BadRequest(new { success = false, message = "Parametri non validi" });
                 }
 
-                // Ottieni l'utente corrente
+            
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 if (string.IsNullOrEmpty(userId))
                 {
@@ -176,14 +169,12 @@ namespace MuseoMineralogia.Controllers
                     return Unauthorized(new { success = false, message = "Utente non trovato" });
                 }
 
-                // Ottieni il biglietto
                 var biglietto = await _context.TipiBiglietto.FindAsync(model.BigliettoId);
                 if (biglietto == null)
                 {
                     return NotFound(new { success = false, message = "Tipo di biglietto non trovato" });
                 }
 
-                // Crea una sessione Stripe Checkout
                 var options = new SessionCreateOptions
                 {
                     PaymentMethodTypes = new List<string> { "card" },
@@ -193,7 +184,7 @@ namespace MuseoMineralogia.Controllers
                         {
                             PriceData = new SessionLineItemPriceDataOptions
                             {
-                                UnitAmount = (long)(biglietto.Prezzo * 100), // Converti in centesimi
+                                UnitAmount = (long)(biglietto.Prezzo * 100),
                                 Currency = "eur",
                                 ProductData = new SessionLineItemPriceDataProductDataOptions
                                 {
@@ -210,11 +201,10 @@ namespace MuseoMineralogia.Controllers
                     CancelUrl = Url.Action("Cancel", "Biglietteria", null, Request.Scheme)
                 };
 
-                // Crea la sessione di checkout
+            
                 var service = new SessionService();
                 Session session = await service.CreateAsync(options);
 
-                // Salva informazioni dell'ordine nel database
                 var ordine = new Ordine
                 {
                     UtenteId = userId,
@@ -227,7 +217,6 @@ namespace MuseoMineralogia.Controllers
                 _context.Ordini.Add(ordine);
                 await _context.SaveChangesAsync();
 
-                // Aggiungi dettagli ordine
                 var dettaglio = new DettaglioOrdine
                 {
                     OrdineId = ordine.OrdineId,
@@ -239,7 +228,6 @@ namespace MuseoMineralogia.Controllers
                 _context.DettagliOrdine.Add(dettaglio);
                 await _context.SaveChangesAsync();
 
-                // Ritorna il Session ID per il redirect a Stripe Checkout
                 return Json(new { success = true, sessionId = session.Id });
             }
             catch (StripeException se)
@@ -254,7 +242,6 @@ namespace MuseoMineralogia.Controllers
             }
         }
 
-        // GET: Biglietteria/Success
         [Authorize]
         public async Task<IActionResult> Success(string session_id)
         {
@@ -265,11 +252,9 @@ namespace MuseoMineralogia.Controllers
 
             try
             {
-                // Verifica lo stato della sessione
                 var sessionService = new SessionService();
                 var session = await sessionService.GetAsync(session_id);
 
-                // Trova l'ordine associato
                 var ordine = await _context.Ordini
                     .FirstOrDefaultAsync(o => o.SessionId == session_id);
 
@@ -279,12 +264,10 @@ namespace MuseoMineralogia.Controllers
                     return View("Error");
                 }
 
-                // Carica separatamente i dettagli dell'ordine con i tipi di biglietto
                 var dettagli = await _context.DettagliOrdine
                     .Where(d => d.OrdineId == ordine.OrdineId)
                     .ToListAsync();
 
-                // Carica i tipi di biglietto per ogni dettaglio
                 foreach (var dettaglio in dettagli)
                 {
                     dettaglio.TipoBiglietto = await _context.TipiBiglietto
@@ -293,7 +276,6 @@ namespace MuseoMineralogia.Controllers
 
                 ordine.DettagliOrdine = dettagli;
 
-                // Aggiorna lo stato dell'ordine in base allo stato del pagamento
                 if (session.PaymentStatus == "paid")
                 {
                     ordine.Stato = "Pagato";
@@ -324,13 +306,11 @@ namespace MuseoMineralogia.Controllers
             }
         }
 
-        // GET: Biglietteria/Cancel
         public IActionResult Cancel()
         {
             return View();
         }
 
-        // GET: Biglietteria/MieiOrdini
         [Authorize]
         public async Task<IActionResult> MieiOrdini()
         {
@@ -341,15 +321,12 @@ namespace MuseoMineralogia.Controllers
                 .OrderByDescending(o => o.DataOrdine)
                 .ToListAsync();
 
-            // Carica manualmente i dettagli ordine e i tipi di biglietto
             foreach (var ordine in ordini)
             {
-                // Carica i dettagli ordine
                 var dettagli = await _context.DettagliOrdine
                     .Where(d => d.OrdineId == ordine.OrdineId)
                     .ToListAsync();
 
-                // Carica i tipi di biglietto per ogni dettaglio
                 foreach (var dettaglio in dettagli)
                 {
                     dettaglio.TipoBiglietto = await _context.TipiBiglietto
@@ -362,7 +339,6 @@ namespace MuseoMineralogia.Controllers
             return View(ordini);
         }
 
-        // GET: Biglietteria/DettaglioOrdine/5
         [Authorize]
         public async Task<IActionResult> DettaglioOrdine(int? id)
         {
@@ -381,12 +357,10 @@ namespace MuseoMineralogia.Controllers
                 return NotFound();
             }
 
-            // Carica manualmente i dettagli ordine
             var dettagli = await _context.DettagliOrdine
                 .Where(d => d.OrdineId == ordine.OrdineId)
                 .ToListAsync();
 
-            // Carica i tipi di biglietto per ogni dettaglio
             foreach (var dettaglio in dettagli)
             {
                 dettaglio.TipoBiglietto = await _context.TipiBiglietto
@@ -398,7 +372,6 @@ namespace MuseoMineralogia.Controllers
             return View(ordine);
         }
 
-        // POST: Biglietteria/CancellaOrdine/5
         [Authorize]
         [HttpPost, ActionName("CancellaOrdine")]
         [ValidateAntiForgeryToken]
@@ -406,7 +379,6 @@ namespace MuseoMineralogia.Controllers
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            // Carica l'ordine senza include
             var ordine = await _context.Ordini
                 .FirstOrDefaultAsync(o => o.OrdineId == id && o.UtenteId == userId);
 
@@ -415,25 +387,21 @@ namespace MuseoMineralogia.Controllers
                 return NotFound();
             }
 
-            // Puoi annullare l'ordine solo se è in attesa di pagamento
             if (ordine.Stato != "In attesa di pagamento")
             {
                 TempData["ErrorMessage"] = "Non è possibile annullare un ordine che è già stato pagato";
                 return RedirectToAction(nameof(MieiOrdini));
             }
 
-            // Carica separatamente i dettagli dell'ordine
             var dettagliOrdine = await _context.DettagliOrdine
                 .Where(d => d.OrdineId == ordine.OrdineId)
                 .ToListAsync();
 
-            // Rimuovi i dettagli dell'ordine
             if (dettagliOrdine.Any())
             {
                 _context.DettagliOrdine.RemoveRange(dettagliOrdine);
             }
 
-            // Rimuovi l'ordine
             _context.Ordini.Remove(ordine);
             await _context.SaveChangesAsync();
 

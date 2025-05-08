@@ -91,11 +91,10 @@
             const checkoutButton = document.getElementById('checkout-button');
 
             checkoutButton.addEventListener('click', function() {
-                // Disabilita il pulsante per prevenire clic multipli
+                
                 checkoutButton.disabled = true;
                 checkoutButton.textContent = 'Elaborazione in corso...';
 
-                // Chiamata al controller per creare la sessione Stripe
                 fetch('/Carrello/CreaPagamento', {
                     method: 'POST',
                     headers: {
@@ -114,7 +113,6 @@
                         return;
                     }
 
-                    // Redirect a Stripe Checkout
                     return stripe.redirectToCheckout({ sessionId: data.sessionId });
                 })
                 .then(function(result) {
